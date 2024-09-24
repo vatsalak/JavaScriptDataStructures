@@ -54,6 +54,14 @@ class stack{
     {
         this.items=[];
     }
+    display()
+    {
+        if(this.isEmpty())
+        {
+            return "The queue is empty"
+        }
+        console.log(this.items.join(" ,"));
+    }
 }
 let st=new stack();
 st.push(12);

@@ -45,18 +45,24 @@ class Queue{
         }
         return this.items[0];
     }
-
+    display() {
+        if (this.isEmpty()) {
+          console.log("Queue is empty");
+        } else {
+          console.log("Queue elements:", this.items.join(", "));
+        }
+      }
 }
 let q=new Queue
 q.enque(11);
 q.enque(2);
 q.enque(34);
 q.enque(4);
-//console.log(Queue[items]);
+q.display();
 console.log(q.Qfront());
 
 console.log(q.deque());
-//console.log(Queue);
+q.display();
 console.log(q.Qsize());
 
 
